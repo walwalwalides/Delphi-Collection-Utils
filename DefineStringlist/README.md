@@ -1,6 +1,6 @@
 # DefineStringlist
 - Define Stringslist and Add new Methods.                                                              
-![](DefineStringlist_.png) 
+![](DefineStringList_.png) 
 
 
 
