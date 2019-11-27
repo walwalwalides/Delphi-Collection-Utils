@@ -1,11 +1,11 @@
 # DefineStringlist
-- Define Stringslist and add new methods.                                                              
+- Define Stringslist and Add new Methods.                                                              
 ![](DefineStringlist.png) 
 
 
 
 # Features  
-- Avoid Adding duplicate elements to a StringsList.
+- Avoid Adding Duplicate Elements to a StringsList.
 
 
 
