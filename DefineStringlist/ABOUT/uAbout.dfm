@@ -335,7 +335,7 @@ object frmAbout: TfrmAbout
     Height = 180
     Lines.Strings = (
       '   Software name    : '
-      'DefineStringsList'
+      '              DefineStringsList'
       '   Software version : V1.0.0.0'
       ''
       ''

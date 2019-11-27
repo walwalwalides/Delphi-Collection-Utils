@@ -85,7 +85,6 @@ procedure TfrmMain.actAboutExecute(Sender: TObject);
 var
   f: TfrmAbout;
 begin
-
   if Assigned(f) then
     Application.CreateForm(TfrmAbout, f);
   f.Position := poMainFormCenter;

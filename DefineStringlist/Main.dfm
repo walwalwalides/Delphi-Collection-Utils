@@ -77,12 +77,12 @@ object frmMain: TfrmMain
   end
   object ApplicationEvents1: TApplicationEvents
     OnIdle = ApplicationEvents1Idle
-    Left = 368
-    Top = 192
+    Left = 376
+    Top = 288
   end
   object MainMenu1: TMainMenu
-    Left = 632
-    Top = 216
+    Left = 80
+    Top = 208
     object File1: TMenuItem
       Caption = 'File'
       object OpenFiles1: TMenuItem
@@ -134,8 +134,8 @@ object frmMain: TfrmMain
     end
   end
   object ActionList1: TActionList
-    Left = 449
-    Top = 160
+    Left = 161
+    Top = 184
     object actClear: TAction
       Category = 'Action'
       Caption = 'Clear'
