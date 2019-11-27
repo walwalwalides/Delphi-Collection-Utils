@@ -1,3 +1,13 @@
+ { ============================================
+  Software Name : 	DefineStringsList
+  ============================================ }
+{ ******************************************** }
+{ Written By WalWalWalides                     }
+{ CopyRight © 2019                             }
+{ Email : WalWalWalides@gmail.com              }
+{ GitHub :https://github.com/walwalwalides     }
+{ ******************************************** }
+
 unit Main;
 
 interface
@@ -5,7 +15,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.AppEvnts;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.AppEvnts, System.Actions, Vcl.ActnList, Vcl.Menus;
 
 type
   TfrmMain = class(TForm)
@@ -15,13 +25,44 @@ type
     GroupBox1: TGroupBox;
     ApplicationEvents1: TApplicationEvents;
     btnCompaire: TButton;
-    Button2: TButton;
+    GrpBoxCompaire: TGroupBox;
+    GrpBoxAdd: TGroupBox;
+    MainMenu1: TMainMenu;
+    File1: TMenuItem;
+    OpenFiles1: TMenuItem;
+    OpenFolders1: TMenuItem;
+    N1: TMenuItem;
+    Exit1: TMenuItem;
+    Edit1: TMenuItem;
+    CopytoClipboard1: TMenuItem;
+    View1: TMenuItem;
+    Refresh1: TMenuItem;
+    A1: TMenuItem;
+    C1: TMenuItem;
+    miSum: TMenuItem;
+    Option1: TMenuItem;
+    actOption1: TMenuItem;
+    A2: TMenuItem;
+    actAbout1: TMenuItem;
+    ActionList1: TActionList;
+    actClear: TAction;
+    actSum: TAction;
+    actOpenFile: TAction;
+    actShowInExplorer: TAction;
+    actOpenFolder: TAction;
+    actExit: TAction;
+    actCopyToClipboard: TAction;
+    actRefresh: TAction;
+    actSettings: TAction;
+    actAbout: TAction;
     procedure btnADDClick(Sender: TObject);
     procedure btnShowstrList1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnShowstrList2Click(Sender: TObject);
     procedure ApplicationEvents1Idle(Sender: TObject; var Done: Boolean);
     procedure btnCompaireClick(Sender: TObject);
+    procedure actAboutExecute(Sender: TObject);
+    procedure actExitExecute(Sender: TObject);
   private
     { Private-Deklarationen }
   public
@@ -33,12 +74,32 @@ var
 
 implementation
 
-uses DupStringList;
+uses DupStringList,uAbout;
 {$R *.dfm}
 
 var
   strLstT1: TDupStringList;
   strLstT2: TStringlist;
+
+procedure TfrmMain.actAboutExecute(Sender: TObject);
+var
+  f: TfrmAbout;
+begin
+
+  if Assigned(f) then
+    Application.CreateForm(TfrmAbout, f);
+  f.Position := poMainFormCenter;
+  try
+    f.ShowModal;
+  finally
+    FreeAndNil(f);
+  end;
+end;
+
+procedure TfrmMain.actExitExecute(Sender: TObject);
+begin
+  Application.Terminate;
+end;
 
 procedure TfrmMain.ApplicationEvents1Idle(Sender: TObject; var Done: Boolean);
 begin
@@ -61,7 +122,7 @@ begin
   strLstT1.AddNoDup('Test');            // add duplicate string to stringlist
   strLstT1.AddNoDup('Test2');
 
-  // -----------------------------------------------------------
+  // ----------------------------------------------------------- //
 
   strLstT2.add('Test');
   strLstT2.add('Test');
@@ -127,6 +188,8 @@ begin
   strLstT2.Duplicates := dupIgnore;
   // -------------------------------------------------
   frmMain.position := poMainFormCenter;
+  frmMain.Color:=clWindow;
+  frmMain.WindowState:=wsMaximized;
 end;
 
 end.

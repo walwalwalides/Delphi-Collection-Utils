@@ -3,7 +3,8 @@ program DefineStringList;
 uses
   Vcl.Forms,
   Main in 'Main.pas' {frmMain},
-  DupStringList in 'DupStringList.pas';
+  DupStringList in 'DupStringList.pas',
+  uAbout in 'ABOUT\uAbout.pas' {frmAbout};
 
 {$R *.res}
 
