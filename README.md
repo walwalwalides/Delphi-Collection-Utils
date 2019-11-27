@@ -11,7 +11,7 @@ My Own Delphi-Collection ( Utils )
 | File | Contents | 
 | --- | --- |
 | .gitignore | Git ignores the Files in this File |
-|[DefineStringsList](https://github.com/walwalwalides/Delphi-Collection-Utils/tree/master/DefineStringlist)| Define Stringslist and add new methods|
+|[DefineStringsList](https://github.com/walwalwalides/Delphi-Collection-Utils/tree/master/DefineStringlist)| Define Stringslist and add new methods.|
 | README.md | The Readme for this Project|
 
 ------
