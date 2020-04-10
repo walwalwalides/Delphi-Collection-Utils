@@ -5,6 +5,13 @@ My Own Delphi-Collection ( Utils )
 
 **Authors:**  *WalWalWalides*
 ------
+![Platforms](https://img.shields.io/badge/Supported%20platforms-Win32%20and%20Win64-red.svg)
+![GitHub](https://img.shields.io/github/license/walwalwalides/Delphi-Collection-Utils)
+
+![Platform](https://img.shields.io/badge/delphi->%3D_2010-glue)
+![GitHub last commit](https://img.shields.io/github/last-commit/walwalwalides/Delphi-Collection-Utils)
+
+[![GitHub stars](https://img.shields.io/github/stars/walwalwalides/Delphi-Collection-Utils)](https://github.com/walwalwalides/Delphi-Collection-Utils/stargazers)
 
 ## Contains
 
